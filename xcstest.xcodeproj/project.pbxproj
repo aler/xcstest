@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0EAA181BD733BF00FB7CEC /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0EAA171BD733BF00FB7CEC /* Cartography.framework */; };
 		FA2111471BD5DA1F000C7903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2111461BD5DA1F000C7903 /* AppDelegate.swift */; };
 		FA2111491BD5DA1F000C7903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2111481BD5DA1F000C7903 /* ViewController.swift */; };
 		FA21114C1BD5DA1F000C7903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA21114A1BD5DA1F000C7903 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA0EAA171BD733BF00FB7CEC /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = "vendor/Cartography/build/Debug-iphoneos/Cartography.framework"; sourceTree = "<group>"; };
 		FA2111431BD5DA1F000C7903 /* xcstest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcstest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2111461BD5DA1F000C7903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2111481BD5DA1F000C7903 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0EAA181BD733BF00FB7CEC /* Cartography.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		FA21113A1BD5DA1F000C7903 = {
 			isa = PBXGroup;
 			children = (
+				FA0EAA171BD733BF00FB7CEC /* Cartography.framework */,
 				FA2111451BD5DA1F000C7903 /* xcstest */,
 				FA21115A1BD5DA1F000C7903 /* xcstestTests */,
 				FA2111651BD5DA1F000C7903 /* xcstestUITests */,
@@ -398,6 +402,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/Cartography/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = xcstest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexrudyk.xcstest;
@@ -409,6 +417,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/Cartography/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = xcstest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexrudyk.xcstest;
@@ -483,6 +495,7 @@
 				FA21116D1BD5DA1F000C7903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA21116E1BD5DA1F000C7903 /* Build configuration list for PBXNativeTarget "xcstestTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +504,7 @@
 				FA2111701BD5DA1F000C7903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2111711BD5DA1F000C7903 /* Build configuration list for PBXNativeTarget "xcstestUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +513,7 @@
 				FA2111731BD5DA1F000C7903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
