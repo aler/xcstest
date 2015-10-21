@@ -1,0 +1,3 @@
+[submodule "vendor/Cartography"]
+	path = vendor/Cartography
+	url = git@github.com:robb/Cartography.git
